@@ -87,13 +87,10 @@ bool cvEyeTracker::initVideo( video_context *vid_context,
 	if(vid_context->mode==CV_USE_VIDEO){
         vid_context->vp.setSpeed(1.0);
         vid_context->vp.setUseTexture(true);
-//		vid_context->vp.loadMovie("/Volumes/big/doc/eye/current/daytime.mov");
-		vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/capture/grid_test_4.mov");
-//		vid_context->vp.loadMovie("/Volumes/big/photo/guppy/20120411_131311_L.mov");
-//		vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/3led/chris_pupil.mov");
-//		vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/derpold/tf2_play.mov");
-//		vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/4led/reading.mov");
-//		vid_context->vp.loadMovie("/Users/jdewitt/doc/guppy/20120522_155714_L.mov");
+		
+		// video file goes here
+		//vid_context->vp.loadMovie("");
+
         vid_context->vp.play();
 		counter->tot = vid_context->vp.getTotalNumFrames();
         if (vid_context->vp.isLoaded()) {
